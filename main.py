@@ -4,8 +4,8 @@ import pickle
 
 app=Flask(__name__)
 
-count_vec=pickle.load(open(r"E:\10.python\NLP\New folder\countvector.pkl","rb"))
-model=pickle.load(open(r"E:\10.python\NLP\New folder\Langmodel.pkl","rb"))
+count_vec=pickle.load(open("countvector.pkl","rb"))
+model=pickle.load(open("Langmodel.pkl","rb"))
 @app.route("/")
 def Home():
     return render_template("Index.html")
