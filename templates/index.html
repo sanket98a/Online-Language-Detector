@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {text-align: center;size=10}
+        p {text-align: center;color:Green}
+        g {text-align: center;color:Red}
+        div {text-align: center;}
+        </style>
+</head>
+
+<body>
+    <font color="Orange"  ><h1>***Online Language Detector ***<h1></font>
+<form method="POST" action="/predict">
+    <labels>Enter the langauge </labels><br><br>
+    <textarea name="sentence" rows=10 cols=100 required minlength="200" > </textarea>
+    <input type="Submit"><br><br> 
+    <p>
+    {{prediction}}</p>
+   <g> {{prediction1}}</g>
+</form>
+</body>
+</html>
