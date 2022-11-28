@@ -1,0 +1,4 @@
+FROM python
+COPY .
+
+EXPOSE 8000
