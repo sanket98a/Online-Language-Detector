@@ -1,4 +1,4 @@
-FROM python
+FROM python 3.10
 
 COPY . /app
 
@@ -9,5 +9,5 @@ RUN pip install --upgrade pip
 
 EXPOSE 8000
 
-CMD gunicorn --workers=1 --bind 0.0.0.0:8000 main:main
+CMD ['python3' ,'main.py']
 
