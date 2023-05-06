@@ -2,7 +2,7 @@
 from flask import Flask,render_template,request
 import pickle
 
-app=Flask(__name__,template_folder="Templates")
+app=Flask(__name__,template_folder="templates\.")
 
 count_vec=pickle.load(open("countvector.pkl","rb"))
 model=pickle.load(open("Langmodel.pkl","rb"))
