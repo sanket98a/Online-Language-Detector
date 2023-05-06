@@ -9,5 +9,5 @@ RUN pip install --upgrade pip
 
 EXPOSE 8000
 
-RUN Python main.py
+RUN Python3 main.py
 
