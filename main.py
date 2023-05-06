@@ -25,9 +25,9 @@ def detect():
         y_pred=model.predict(result1.A)
         final_output=y_pred[0]
         # print(final_output)
-        return render_template('index.html' ,prediction=f"Predicted Language ::: {final_output}")
+        return render_template('Index.html' ,prediction=f"Predicted Language ::: {final_output}")
     else:
-        return render_template('index.html' ,prediction1=f"Please Enter valid Text")
+        return render_template('Index.html' ,prediction1=f"Please Enter valid Text")
 
 
 
