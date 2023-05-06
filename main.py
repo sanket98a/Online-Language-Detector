@@ -2,13 +2,13 @@
 from flask import Flask,render_template,request
 import pickle
 
-app=Flask(__name__,template_folder="templates\.")
+app=Flask(__name__,template_folder="templates")
 
 count_vec=pickle.load(open("countvector.pkl","rb"))
 model=pickle.load(open("Langmodel.pkl","rb"))
 @app.route("/")
 def Home():
-    return render_template("Index1.html")
+    return render_template("Index.html")
 
 @app.route("/predict",methods=["POST","GET"])
 def detect():
@@ -25,9 +25,9 @@ def detect():
         y_pred=model.predict(result1.A)
         final_output=y_pred[0]
         # print(final_output)
-        return render_template("index1.html" ,prediction=f"Predicted Language ::: {final_output}")
+        return render_template("index.html" ,prediction=f"Predicted Language ::: {final_output}")
     else:
-        return render_template("index1.html" ,prediction1=f"Please Enter valid Text")
+        return render_template("index.html" ,prediction1=f"Please Enter valid Text")
 
 
 
