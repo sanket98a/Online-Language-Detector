@@ -9,5 +9,7 @@ RUN pip install --upgrade pip
 
 EXPOSE 8000
 
-CMD ["Python", "main.py"]
+ENTRYPOINT 
+
+CMD ["Python", "./main.py"]
 
