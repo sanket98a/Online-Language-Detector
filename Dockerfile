@@ -9,5 +9,5 @@ RUN pip install --upgrade pip
 
 EXPOSE 8000
 
-CMD ["Python3", "main.py"]
+CMD ["Python", "main.py"]
 
