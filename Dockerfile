@@ -1,4 +1,4 @@
-FROM python 3.10
+FROM python
 
 COPY . /app
 
@@ -9,5 +9,5 @@ RUN pip install --upgrade pip
 
 EXPOSE 8000
 
-CMD ['python3' ,'main.py']
+RUN Python main.py
 
