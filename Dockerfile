@@ -4,10 +4,13 @@ COPY . /app
 
 WORKDIR  /app
 
+RUN apt-get update
+RUN apt-get install -y python
 RUN pip install -r requirements.txt
 RUN pip install --upgrade pip
 
 EXPOSE 8000
- 
-CMD ["Python", "./main.py"]
+ENTRYPOINT ["python"]
+
+CMD ["main.py"]
 
