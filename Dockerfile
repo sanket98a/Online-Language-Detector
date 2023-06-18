@@ -5,12 +5,12 @@ COPY . /app
 WORKDIR  /app
 
 RUN apt-get update
-RUN apt-get install -y python
+RUN apt-get install -y python3
 RUN pip install -r requirements.txt
 RUN pip install --upgrade pip
 
 EXPOSE 8000
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]
 
 CMD ["main.py"]
 
