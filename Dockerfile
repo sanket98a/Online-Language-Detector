@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 RUN pip install --upgrade pip
 
 EXPOSE 8000
-ENTRYPOINT ["python3"]
+ENTRYPOINT ["python"]
 
 CMD ["main.py"]
 
