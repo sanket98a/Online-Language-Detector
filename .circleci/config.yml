@@ -23,7 +23,8 @@ jobs:
     steps:
         - checkout
         - python/load-cache
-        - run: python main.py
+        # - run: python main.py
+        - run: echo "deploying to the product server"
 
 workflows:
   build_and_test_deploy:
