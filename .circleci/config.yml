@@ -6,12 +6,12 @@ jobs:
       - image: cimg/python:3.11
     steps:
         - checkout
-        - run: python main.py
+        - run : python main.py
   deploy:
     docker:
       - image: cimg/python:3.11
     steps:
-      - run: echo "deploying to production server"
+      - run : echo "deploying to production server"
 
 workflows:
   build_and_test_deploy:
