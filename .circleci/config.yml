@@ -7,6 +7,9 @@ jobs:
     steps:
         - checkout
         - run: python main.py
+        - run:
+          command: pip install -r src/requirements.txt
+          name: Install Deps
   deploy:
     docker:
       - image: cimg/python:3.11
