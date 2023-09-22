@@ -13,8 +13,8 @@ jobs:
         - python/load-cache
         - run: python main.py
         - run:
-          command: pip install -r requirements.txt
-          name: Install Deps
+              command: pip install -r requirements.txt
+              name: Install Deps
         - python/save-cache
   deploy:
     docker:
